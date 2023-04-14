@@ -22,3 +22,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+st.markdown("""
+<style>
+.big-font {
+    font-size:50px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">sei vecchio? Suonaaa !!</p>', unsafe_allow_html=True)
+
+if st.button("Pigia se suoni!!!"):
+    st.write("Fai bene vez!")
+else:
+    st.write("...")
