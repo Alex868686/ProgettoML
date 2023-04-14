@@ -13,12 +13,11 @@ def DDD(l1:float,l2:float):
 def main():
     st.text("Quanti anni hai?")
     # slider
-    num1 = st.slider('Please inserisci base', 0, 100, 25)
-    num2 = st.slider('Please inserisci altezza', 0, 100, 35)
+    num1 = st.slider('Please inserisci eta effettiva', 0, 100, 25)
+    num2 = st.slider('Please inserisci reddito medio', 0, 100, 35)
     r = DDD(num1,num1)
 
-    st.write("l'area del triangolo è",r)
-
+    st.write("Tra 1 anno di python avrai tot anni:",r)
 
 
 if __name__ == "__main__":
