@@ -1,23 +1,25 @@
 
+import numpy as np
 import streamlit as st
 import pandas as pd
+from numpy.random import rand
 
-st.title("Rock Output!!!????!")
+st.title("Rock Ginafri!!!????!")
 
-st.image("https://raw.githubusercontent.com/Frenz86/IFTS23/main/streamlit/bb.png", caption="foto brutta brutta", width=250, clamp=True)
+st.video("gian.modificato.mp4")
 
 def DDD(l1:float,l2:float):
     a = (l1*l2)/2
     return a 
 
 def main():
-    st.text("Quanti anni hai?")
+    st.text("Gianfr level power")
     # slider
-    num1 = st.slider('Please inserisci eta effettiva', 0, 100, 25)
-    num2 = st.slider('Please inserisci reddito medio', 0, 100, 35)
+    num1 = st.slider('Please voti gianfranco', 0, 100, 25)
+    num2 = st.slider('Please inserisci reddito leotta', 0, 100000, 35)
     r = DDD(num1,num1)
 
-    st.write("Tra 1 anno di python avrai tot anni:",r)
+    st.write("Il livello di potenza di Leotta è pari a:",r)
 
 
 if __name__ == "__main__":
@@ -37,3 +39,8 @@ if st.button("Pigia se suoni!!!"):
     st.write("Fai bene vez!")
 else:
     st.write("...")
+
+if st.checkbox('marca se suoni rock'):
+    st.write('Rockkk!!!!!!')
+else:
+    st.write("waiting...")
